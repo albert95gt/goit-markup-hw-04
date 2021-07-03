@@ -337,6 +337,24 @@ img {
 
   /* ========= Our Clients ========= */
   
+  .our-clients-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .our-clients-list-link {
+    
+  }
+  .our-clients-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  }
   /* ========= End Our Clients ========= */
 
 
