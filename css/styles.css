@@ -260,7 +260,8 @@ img {
     align-items: center;
     margin-bottom: 30px;
     height: 120px;
-    background-color:var(--secondary-background-color)
+    background-color:var(--secondary-background-color);
+    border-radius: 4px;
   }
   .feauture-icon {
     margin: 0 auto;
