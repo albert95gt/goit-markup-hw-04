@@ -8,6 +8,7 @@
   --primery-white-colour:#FFFFFF;
   --dark-background-color:#2F303A;
   --secondary-background-color:#F5F4FA;
+  --primary-decoration-colour: #AFB1B8;
   --primary-margin: 30px;
   }
 
@@ -90,11 +91,13 @@ img {
   .social-list {
     display: flex;
     justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 32px;
+    
+  }
+  .social-list-item {
+    width: 44px;
+    height: 44px;
   }
   .social-list-icon {
-    
     width: 20px;
     height: 20px;
   }
@@ -102,19 +105,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
+   
 
-    fill: #AFB1B8;
-    border-radius: 50%;
-    background-color: var(--primery-white-colour);
-  }
-  .social-list-link:hover,
-  .social-list-link:focus {
-    fill:var(--primery-white-colour);
-    background-color: var(--accent-colour);
     
   }
+  
  /* ============= END COMPONENTS ============= */
 
  /* ========= Header ========= */
@@ -311,8 +308,7 @@ img {
     border-radius: 0px 0px 4px 4px;
   }
   .card-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 30px;
   }
 
   .subtitle-name {
@@ -333,6 +329,17 @@ img {
     line-height: 1.19;
     text-align: center;
   }
+  .light-bg{
+    fill: var(--primary-decoration-colour);
+    border-radius: 50%;
+    background-color: var(--primery-white-colour);
+  }
+  .light-bg.social-list-link:hover,
+  .light-bg.social-list-link:focus {
+    fill:var(--primery-white-colour);
+    background-color: var(--accent-colour);
+    
+  }
   /* ========= End Our Team ========= */
 
   /* ========= Our Clients ========= */
@@ -343,17 +350,28 @@ img {
     align-items: center;
     justify-content: space-between;
   }
-  .our-clients-list-link {
-    
-  }
   .our-clients-list-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--primary-decoration-colour);
+    border-radius: 4px;
+  }
+ .our-clients-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    fill:var(--primary-decoration-colour);
+  }
+  .our-clients-list-link:hover,
+  .our-clients-list-link:focus {
+    fill: var(--accent-colour);
+    border: 1px solid var(--accent-colour) ;
+  }
+  .our-clients-icon  {
+    width: 106px;
+    height: 60px;
   }
   /* ========= End Our Clients ========= */
 
@@ -361,7 +379,11 @@ img {
 /* ========= End Main ========= */
 
 /* ========= Footer ========= */
-.footer {
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--dark-background-color)
@@ -393,6 +415,31 @@ img {
   .address :not(:last-child) {
     margin-bottom: 9px;
   }
+  .footer-sidebar {
+   margin-left: 70px;
+  }
+  .label {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14px;
+    text-transform: uppercase;
+    color: var(--primery-white-colour)
+   }
+  .dark-bg {
+    fill: var(--primery-white-colour);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .dark-bg.social-list-link:hover,
+  .dark-bg.social-list-link:focus {
+    background-color: var(--accent-colour);
+  }
+  .footer.social-list-item:not(:last-child){
+    margin-right: 10px;
+  } 
+
+  
 
 /* ========= End Footer ========= */
 
@@ -429,6 +476,7 @@ img {
   {
     background: var(--accent-colour);
     color: var(--primery-white-colour);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   .current-btn{
     background: var(--accent-colour);
@@ -466,6 +514,9 @@ img {
    padding: 20px 24px;
    border: 1px solid #EEEEEE;
    border-top: 0;
+ }
+ .card-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  }
  /* ========= End Cards ========= */
 /* ========= End Portfolio ========= */
