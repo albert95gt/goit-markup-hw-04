@@ -415,6 +415,10 @@ img {
   .address-link:focus {
     color: var(--accent-colour);
   }
+  .map-link:hover,
+  .map-link:focus {
+    color: var(--accent-colour);
+  }
   .address {
     margin-top: 20px;
   }
