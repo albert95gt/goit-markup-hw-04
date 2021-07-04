@@ -349,9 +349,14 @@ img {
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--primary-margin));
+    margin-left: calc(-1 * var(--primary-margin));
   }
   .our-clients-list-item {
+    flex-basis: calc((100% - 180px) / 6);
+    margin-top: var(--primary-margin);
+    margin-left: var(--primary-margin);
     width: 170px;
     height: 92px;
     border: 1px solid var(--primary-decoration-colour);
